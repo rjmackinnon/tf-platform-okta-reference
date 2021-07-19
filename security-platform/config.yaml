@@ -32,7 +32,7 @@ security_platform:
           priority: 1
           # TODO: Autoformat so only the role name is needed here
           groups: 
-            - MickeyMouse.roles.Admin
+            - module.MickeyMouse_group_role_admin.group_id
           scopes: 
             - KissMinnie
     - name: TauntDonald
@@ -44,7 +44,7 @@ security_platform:
           priority: 1
           # TODO: Autoformat so only the role name is needed here
           groups: 
-            - MickeyMouse.roles.Admin
-            - MickeyMouse.roles.Manager
+            - module.MickeyMouse_group_role_admin.group_id
+            - module.MickeyMouse_group_role_manager.group_id
           scopes: 
             - TauntDonald
